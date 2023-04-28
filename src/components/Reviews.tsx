@@ -1,20 +1,25 @@
-import React from "react";
+import {FC, useRef} from "react";
 import ReviewsBlock from "./Slider/ReviewsBlock";
 import arrowleft from "../assets/img/arrowleft.png";
 import arrowright from "../assets/img/arrowright.png";
 
-const Reviews = () => {
-  const carousel = React.useRef(null);
+const Reviews: FC = () => {
+  const carousel = useRef<HTMLDivElement>(null);
 
   const LeftClick = () => {
-    console.log(carousel.current.offsetWidth);
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    if (carousel.current != null) {
+      console.log(carousel.current.offsetWidth);
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    }
   };
   const RightClick = () => {
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
-  };
+    if (carousel.current != null) {
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    }
+  }
 
-  
+
+
 
   const arr = [
     {

@@ -1,15 +1,14 @@
-import React from "react";
+import {FC} from "react";
 
-type TProps = {
-  description: string;
-  imageUrl:string;
-  name: string;
-  date: string;
+interface Ifood {
+    description: string;
+    imageUrl:string;
+    name: string;
+    date: string;
 }
-const ReviewsBlock: React.FC<TProps> = ({description, imageUrl, name, date}) => {
 
-  
-  
+const ReviewsBlock: FC<Ifood> = ({description, imageUrl, name, date}) => {
+
   return (
     <div className="reviews__block">
       <p className="reviews__text">{description}</p>

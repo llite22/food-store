@@ -1,7 +1,7 @@
-import React from 'react'
+import {FC} from 'react'
 import login from "../assets/img/login.png";
 import cart from "../assets/img/cart.png";
-const Header = () => {
+const Header: FC = () => {
   return (
     <header>
     <div className="logo">Chow/</div>

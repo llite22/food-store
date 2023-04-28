@@ -1,7 +1,7 @@
-import React from "react";
-import imageOne from "../../assets/img/cart-img/1.png";
+import {FC} from "react";
 
-type TProps = {
+
+interface Ifood {
   imageUrl:string;
   description: string;
   price: string;
@@ -10,7 +10,7 @@ type TProps = {
 
 
 
-const Card: React.FC<TProps> = ({imageUrl, description, price}) => {
+const Card: FC<Ifood> = ({imageUrl, description, price}) => {
   return (
     
       <div className="card__block">

@@ -1,8 +1,9 @@
 
 import background from "../assets/img/background.jpg";
+import {FC} from "react";
 
 
-const Home = () => {
+const Home:FC = () => {
   return (
     <section className="home">
         <div className="background__photo">

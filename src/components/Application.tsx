@@ -1,10 +1,10 @@
-import React from "react";
+import {FC} from "react";
 import iphone from "../assets/img/iphone.png";
 import google from "../assets/img/google.png";
 import apple from "../assets/img/apple.png";
 
 
-const Application = () => {
+const Application:FC = () => {
   return (
     <section className="application">
       <div className="application__left">
